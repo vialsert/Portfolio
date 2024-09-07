@@ -1,0 +1,14 @@
+login = input("Введите логин: ")
+mail = input("Введите почту: ")
+phone_number = input("Введите телефон: ")
+password = input("Введите пароль: ")
+
+
+if len(login) > 6 and \
+   len(password) > 6 and \
+   mail.count("@") and \
+   phone_number.startswith(("+7", "8")) and \
+   len(phone_number) > 10:
+  print("вы вошли в систему")
+else:
+  print("ошибка")
