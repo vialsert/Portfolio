@@ -1,0 +1,77 @@
+name = input("Привет! Тебе нужно написать имя для своего будущего игрока: ")
+print("Супер! Теперь выбери класс своего персонажа")
+classs = input(" 1-Волшебник, 2-Маг, 3-Целитель, 4-Воин: ")
+
+if classs == '1':
+  characteristics = {
+    'attack' : 90,
+    'Protection' : 101,
+    'Skills' : 'intelligence',
+    'Starting inventory' : ['stick','fairy']
+  }
+  print('Вот характеристи волшебника:', characteristics.items())
+  
+elif classs == '2':
+  characteristics = {
+    'attack' : 87,
+    'Protection' : 89,
+    'Skills' : 'spells',
+    'Starting inventory' : ['mantle','amulet']
+  }
+  print('Вот характеристи мага:', characteristics.items())  
+
+elif classs == '3':
+  characteristics = {
+    'attack' : 24,
+    'Protection' : 78,
+    'Skills' : 'treatment',
+    'Starting inventory' : ['medicines','medicinal herbs']
+  }
+  print('Вот характеристи целителя:', characteristics.items())
+
+elif classs == '4':
+  characteristics = {
+    'attack' : 98,
+    'Protection' : 28,
+    'Skills' : 'battle',
+    'Starting inventory' : ['sword', 'shield']
+  }
+  print('Вот характеристи воина:', characteristics.items()) name = input("Привет! Тебе нужно написать имя для своего будущего игрока: ")
+print("Супер! Теперь выбери класс своего персонажа")
+classs = input(" 1-Волшебник, 2-Маг, 3-Целитель, 4-Воин: ")
+
+if classs == '1':
+  characteristics = {
+    'attack' : 90,
+    'Protection' : 101,
+    'Skills' : 'intelligence',
+    'Starting inventory' : ['stick','fairy']
+  }
+  print('Вот характеристи волшебника:', characteristics.items())
+  
+elif classs == '2':
+  characteristics = {
+    'attack' : 87,
+    'Protection' : 89,
+    'Skills' : 'spells',
+    'Starting inventory' : ['mantle','amulet']
+  }
+  print('Вот характеристи мага:', characteristics.items())  
+
+elif classs == '3':
+  characteristics = {
+    'attack' : 24,
+    'Protection' : 78,
+    'Skills' : 'treatment',
+    'Starting inventory' : ['medicines','medicinal herbs']
+  }
+  print('Вот характеристи целителя:', characteristics.items())
+
+elif classs == '4':
+  characteristics = {
+    'attack' : 98,
+    'Protection' : 28,
+    'Skills' : 'battle',
+    'Starting inventory' : ['sword', 'shield']
+  }
+  print('Вот характеристи воина:', characteristics.items()) 
