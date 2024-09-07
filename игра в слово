@@ -1,0 +1,37 @@
+import os 
+
+clear = lambda: os.system('cls')
+
+print("это игра угадай слово")
+input("нажми ентер")
+
+clear()
+
+print("начали!")
+
+word = "квокка"
+
+isWin = True
+hp = 10
+
+letters = []
+
+while hp > 0:
+  isWin = True
+  letter = input("Введите букву: ")
+  if letter in letters:
+    print(f'Вы уже вводили эту букву: {letter}')
+    continue
+  letters.append(letter)
+  
+  print(" ".join([symb if symb in letters else "*" for symb in word]))
+  
+  if isWin:
+    print("молодец")
+  if letter not in word:
+    hp -= 1
+    print(f'осталось: {hp}')
+  if hp == 0:
+    print(f'Вы проиграли! Слово: {word}')
+    break
+
