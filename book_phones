@@ -1,0 +1,68 @@
+book_phones = {
+  'Квам-Дамн': '-79899899889',
+  'Лук Скамворкер': '112',
+  'Петард Вейпер': '1',
+  'Лия Моргала': '+09998765432',
+  'Эдуард Скамворкер': '0'
+}
+
+step = input("напишите цифру дейсвия, которое хотите совершить 1 — показать, 2 — добавить, 3 — изменить, 4 — удалить, 5 — Показать все имена в книге, 6 — Показать все номера в книге:  ")
+
+if step == '1':
+  name = input("Ведите имя контакта: ")
+  if name in book_phones:
+    print(book_phones[name])
+  else:
+    print("Нет в телефонной книге")
+elif step == '2' :
+  name = input("Введите имя контакта: ")
+  number = input("Введите номер контакта: ")
+  book_phones[name] = number
+  for key in book_phones:
+       print(f'{key}: {book_phones[key]}')
+elif step == '3':
+  name = input("ВВедите имя контакта: ")
+  number = input("ВВедите новый номер контакта: ")
+  book_phones[name] = number
+  for key in book_phones:
+       print(f'{key}: {book_phones[key]}')
+elif step == '4':
+  name = input("Введите имя контакта: ")
+  del book_phones[name]
+  for key in book_phones:
+     print(f'{key}: {book_phones[key]}')
+elif step == '5':
+  for name in book_phones:
+    print(name)
+elif step == '6':
+  for number in book_phones.values():
+    print(number)
+else:
+  print("Такого действия нет")
+
+  
+
+
+name = input("ВВедите имя контакта: ")
+number = input("ВВедите номер контакта: ")
+
+if name != '' and number != '':
+  book_phones[name] = number
+  for key in book_phones:
+    print(f'{key}: {book_phones[key]}')
+elif name in book_phones:
+  print(book_phones[name])
+elif name not in book_phones:
+  print("Нет в телефонной книге")
+
+
+book_phones = {
+  'Квам-Дамн': '-79899899889',
+  'Лук Скамворкер': '112',
+  'Петард Вейпер': '1',
+  'Лия Моргала': '+09998765432',
+  'Эдуард Скамворкер': '0'
+}
+for i in book_phones.items():
+  print(i)
+
